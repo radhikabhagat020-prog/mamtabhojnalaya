@@ -1,0 +1,57 @@
+const menu = {
+ "Paneer": [
+  {name: "Matar Paneer", half: "₹80", full: "₹120"},
+  {name: "Kaju Paneer", half: "₹120", full: "₹170"},
+  {name: "Sahi Paneer", half: "₹100", full: "₹150"},
+  {name: "Chola Paneer", half: "₹80", full: "₹120"},
+  {name: "Kaju Kari", half: "₹100", full: "₹150"}
+ ],
+ "Dal": [
+  {name: "Dal Fry", half: "₹60", full: "₹90"},
+  {name: "Dal Tadka", half: "₹70", full: "₹100"},
+  {name: "Dal Paneer", half: "₹70", full: "₹100"}
+ ],
+ "Sabji": [
+  {name: "Sev Masala", half: "₹60", full: "₹90"},
+  {name: "Sev Bhaji", half: "₹70", full: "₹100"},
+  {name: "Sev Tamatar", half: "₹60", full: "₹90"},
+  {name: "Tamatar Masala", half: "₹60", full: "₹90"},
+  {name: "Tamatar Chatni", half: "₹70", full: "₹100"},
+  {name: "Khadi Pakoda", half: "₹60", full: "₹90"},
+  {name: "Khadi Tadka", half: "₹70", full: "₹100"}
+ ],
+ "Rice": [
+  {name: "Plain Rice", half: "₹30", full: "₹50"},
+  {name: "Jeera Rice", half: "₹40", full: "₹60"},
+  {name: "Masala Rice", half: "₹50", full: "₹70"},
+  {name: "Lapeta", half: "₹60", full: "₹90"}
+ ],
+ "Roti": [
+  {name: "Tawa Roti", half: "-", full: "₹6"},
+  {name: "Tawa Butter Roti", half: "-", full: "₹8"},
+  {name: "Tandoori Roti", half: "-", full: "₹7"},
+  {name: "Tandoori Butter Roti", half: "-", full: "₹8"},
+  {name: "Lachha Paratha", half: "-", full: "₹25"}
+ ],
+ "Other": [
+  {name: "Papad Dry", half: "-", full: "₹20"},
+  {name: "Papad Masala", half: "-", full: "₹30"},
+  {name: "Bati", half: "-", full: "₹10"},
+  {name: "Dahi", half: "₹30", full: "₹50"},
+  {name: "Water Bottle", half: "₹10", full: "₹20"}
+ ]
+};
+
+const box = document.getElementById("menuContainer");
+Object.entries(menu).forEach(([category, items]) => {
+  let title = document.createElement("h3");
+  title.innerText = category;
+  box.appendChild(title);
+
+  items.forEach(item => {
+    let div = document.createElement("div");
+    div.className = "menu-item";
+    div.innerHTML = `<strong>${item.name}</strong> <span>Half: ${item.half} | Full: ${item.full}</span>`;
+    box.appendChild(div);
+  });
+});
