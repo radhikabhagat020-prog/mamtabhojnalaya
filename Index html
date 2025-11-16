@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mamta Bhojnalaya | Menu & Dining</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Mamta Bhojnalaya</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</nav>
+<button class="call-btn" onclick="window.location.href='tel:+919876543210'">📞 Call Now</button>
+</header>
+
+<section id="home">
+<h2>Welcome to Mamta Bhojnalaya</h2>
+<p>Delicious homemade-style meals served fresh every day.</p>
+</section>
+
+<section id="menu">
+<h2>Our Menu</h2>
+<div id="menuContainer"></div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong> Near Bus Stand, XYZ Road, City, State, Pincode</p>
+<p><strong>Phone:</strong> +91 98765 43210</p>
+
+<!-- Dummy Google Map -->
+<iframe width="90%" height="250" style="border:0;" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.0587!2d75.857!3d26.912!"></iframe>
+</section>
+
+<footer>
+<p>© 2025 Mamta Bhojnalaya | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
