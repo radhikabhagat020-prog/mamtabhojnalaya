@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #fff7cd; }
+header { background: #6b2d06; padding: 15px; text-align: center; color: white; }
+nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
+.call-btn { background: #ffcc00; padding: 10px 18px; border: none; margin-top: 10px; cursor: pointer; font-size: 16px; }
+section { padding: 30px; text-align: center; }
+#menuContainer { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.menu-item { width: 85%; background: white; padding: 12px; border-radius: 8px; display: flex; justify-content: space-between; }
+footer { margin-top: 20px; padding: 15px; background: #6b2d06; color: white; text-align: center; }
+
+@media (max-width: 600px) {
+  .menu-item { width: 100%; }
+}
